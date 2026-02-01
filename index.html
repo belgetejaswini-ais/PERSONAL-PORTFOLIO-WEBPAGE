@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">MyPortfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkToggle">🌙</button>
+</nav>
+
+<section id="home" class="section fade">
+    <h1>Hello, I'm <span>Developer</span></h1>
+    <p>Web Developer | Intern | Learner</p>
+
+    <div class="home-buttons">
+        <button onclick="scrollToSection('projects')">View Projects</button>
+        <a href="#" download class="resume">Download Resume</a>
+    </div>
+
+    <div class="socials">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<section id="about" class="section fade">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer with skills in HTML, CSS and JavaScript.
+        I enjoy building responsive and interactive web applications.
+    </p>
+</section>
+
+<section id="projects" class="section fade">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+        <h3>Interactive Quiz App</h3>
+        <p>Quiz app with score calculation.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Real-Time Chat App</h3>
+        <p>Chat application with message history.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Portfolio Website</h3>
+        <p>Responsive single-page portfolio.</p>
+    </div>
+</section>
+
+<section id="contact" class="section fade">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+</section>
+
+<footer>
+    <p>© 2026 | CODTECH Internship Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
